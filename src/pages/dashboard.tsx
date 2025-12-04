@@ -1,5 +1,5 @@
 import React from 'react';
-import DashboardLayout from '../components/dashboard/dashboardLayout';
+import DashboardLayout from '../components/UserDashboard/dashboardLayout';
 
 const Dashboard: React.FC = () => {
   return <DashboardLayout />;

@@ -5,7 +5,7 @@ import arrowImage from '../../assets/arrow.png';
 const DashboardHeader: React.FC = () => {
   return (
     <div className="mt-8">
-      <div className="relative rounded-xl mb-8"> {/* Removed mx-4 */}
+      <div className="relative rounded-xl mb-8"> 
         <h2 className='mb-4 text-2xl font-bold text-gray-900'>Dashboard</h2>
         <div className="bg-primary border border-gray-200 rounded-xl overflow-hidden relative">
           <div className="px-8 py-6">
@@ -35,7 +35,7 @@ const DashboardHeader: React.FC = () => {
             </div>
           </div>
 
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 rotate-45"> 
+          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 -rotate-45"> 
             <img 
               src={arrowImage} 
               alt="Arrow" 

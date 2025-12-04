@@ -34,11 +34,6 @@ const Register: React.FC = () => {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log('Form submitted:', formData)
-  }
-
   return (
     <div className="min-h-screen w-full overflow-hidden">
       <div className="flex flex-col lg:flex-row w-full max-w-[100vw]">
@@ -93,7 +88,7 @@ const Register: React.FC = () => {
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-5 lg:space-y-6">
+              <form className="space-y-5 lg:space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 lg:gap-6">
                   <div className="space-y-2">
                     <label className="block text-sm font-medium text-primary text-left">

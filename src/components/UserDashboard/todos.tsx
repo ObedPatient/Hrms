@@ -28,8 +28,7 @@ const Todos: React.FC = () => {
         {todos.map((todo, index) => (
           <div
             key={index}
-            className="flex items-center justify-between bg-[#e8f0fe] px-4 py-3 rounded-xl cursor-pointer"
-          >
+            className="flex items-center justify-between bg-[#e8f0fe] px-4 py-3 rounded-xl cursor-pointer">
             <span className="text-sm font-medium text-gray-700">
               {todo}
             </span>
