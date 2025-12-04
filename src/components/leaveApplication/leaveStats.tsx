@@ -119,7 +119,6 @@ const LeaveStats: React.FC = () => {
             <div className="flex flex-col items-end text-right ml-8">
               <p className="text-sm text-white mb-2 text-center">{leave.type}</p>
               
-              {/* Option 1: Using React Router Link */}
               <Link 
                 to={leave.applyLink}
                 className="px-8 py-3 bg-accent text-black text-base font-semibold rounded-full hover:bg-accent-hover transition-all duration-200 shadow-lg hover:shadow-xl active:scale-95 whitespace-nowrap min-w-[120px] text-center"

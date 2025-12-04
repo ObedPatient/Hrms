@@ -1,6 +1,7 @@
 import React from 'react';
 import { User } from 'lucide-react';
 import arrowImage from '../../assets/arrow.png';
+import { Link } from 'react-router-dom';
 
 const DashboardHeader: React.FC = () => {
   return (
@@ -29,7 +30,7 @@ const DashboardHeader: React.FC = () => {
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                   </svg>
-                  <span>Edit Profile</span>
+                  <span><Link to="/edit-profile">Edit Profile</Link></span>
                 </button>
               </div>
             </div>

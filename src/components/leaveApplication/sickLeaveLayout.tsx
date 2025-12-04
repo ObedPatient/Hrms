@@ -2,7 +2,7 @@ import React from 'react';
 import Tabs from '../UserDashboard/tabs';  
 import { NotebookText } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import LeaveForm from '../forms/leaveForm';
+import SickLeave from '../forms/sickForm';
 
 const ApplyLeave: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const ApplyLeave: React.FC = () => {
                     Leave application
                     </Link>
                     <span className="mx-2">{'>'}</span>
-                    <span className="text-blackz">Apply for annual leave</span>
+                    <span className="text-blackz">Apply for sick leave</span>
                 </p>
             </div>
 
@@ -34,7 +34,7 @@ const ApplyLeave: React.FC = () => {
                   </div>
                   <h5 className='mt-4'>Fill the required fields below to apply for annual leave</h5>
                 </div>
-                <LeaveForm/>
+                <SickLeave/>
               </div>
             </div>
           </div>

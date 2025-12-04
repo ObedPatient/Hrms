@@ -2,9 +2,9 @@ import React from 'react';
 import Tabs from '../UserDashboard/tabs';  
 import { NotebookText } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import LeaveForm from '../forms/leaveForm';
+import LeaveRecallForm from '../forms/leaveRecallForm';
 
-const ApplyLeave: React.FC = () => {
+const LeaveRecall: React.FC = () => {
   return (
     <div className="min-h-screen w-full bg-black flex flex-col">
       <div className="flex-1 max-w-7xl mx-auto w-full bg-gradient flex flex-col">
@@ -16,11 +16,7 @@ const ApplyLeave: React.FC = () => {
                     Dashboard
                     </Link>
                     <span className="mx-2">{'>'}</span>
-                    <Link to="/leave" className="text-black hover:text-accent">
-                    Leave application
-                    </Link>
-                    <span className="mx-2">{'>'}</span>
-                    <span className="text-blackz">Apply for annual leave</span>
+                    <span className="text-blackz">leave recall</span>
                 </p>
             </div>
 
@@ -30,11 +26,10 @@ const ApplyLeave: React.FC = () => {
                 <div className="flex flex-col items-center justify-center mb-6">
                   <div className="flex items-center gap-3">
                     <NotebookText className="w-7 h-7 text-black" />
-                    <h2 className="text-2xl text-gray-800 text-center">Leave Application</h2>
+                    <h2 className="text-2xl text-gray-800 text-center">Leave recall</h2>
                   </div>
-                  <h5 className='mt-4'>Fill the required fields below to apply for annual leave</h5>
                 </div>
-                <LeaveForm/>
+                <LeaveRecallForm/>
               </div>
             </div>
           </div>
@@ -44,4 +39,4 @@ const ApplyLeave: React.FC = () => {
   );
 }
 
-export default ApplyLeave;
+export default LeaveRecall;

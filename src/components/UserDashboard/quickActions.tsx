@@ -21,7 +21,7 @@ const QuickActions: React.FC = () => {
     },
     { 
       name: 'Update Profile', 
-      path: '/profile' 
+      path: '/edit-profile' 
     },
     { 
       name: 'Events', 
